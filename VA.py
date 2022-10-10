@@ -45,7 +45,7 @@ def takecommand():
         print(f"user said: {query}")
 
     except Exception as e:
-        speak ("Say that again please....")
+        speak ("can you please say that again")
         return "none"
     return query
 
@@ -55,12 +55,12 @@ def wish():
     hour = int(datetime.datetime.now().hour)
 
     if hour>=0 and hour<=12:
-        speak("Good Morning, ")
+        speak(" hola!!Good Morning, ")
     elif hour>=12 and hour<=16:
         speak("Good Afternoon, ")
     else:
         speak("Good Evening,")
-    speak("I am Xclipse, please tell me how can i help you")
+    speak("I am your assistant, please tell me how can i assist you")
 
 if __name__ == "__main__":
     wish()
@@ -133,7 +133,7 @@ if __name__ == "__main__":
 
 
        elif "no thanks" in query:
-           speak("thanks for using me, have a good day")
+           speak("thanks for using me, have a good day!")
            sys.exit()
 
 
@@ -158,7 +158,7 @@ if __name__ == "__main__":
 
 
 
-       speak("Do you have any other work") 
+       speak("Do you have any other work?") 
 
        
 
