@@ -15,7 +15,7 @@ import wikipedia
 import webbrowser
 #import pywhatkit as kit
 import sys
-#import pyjokes
+import pyjokes
 
 
 engine = pyttsx3.init('sapi5')
@@ -141,6 +141,10 @@ if __name__ == "__main__":
        elif "close notepad" in query:
            speak("okay, closing notepad")
            os.system("taskkill/f /im notepad.exe")
+        
+        elif "say jokes" in query:
+            text_temp = pyjokes.get_joke()
+            speak(text_temp)
 
 
 
