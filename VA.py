@@ -15,7 +15,7 @@ import wikipedia
 import webbrowser
 #import pywhatkit as kit
 import sys
-import pyjokes
+#import pyjokes
 
 
 engine = pyttsx3.init('sapi5')
